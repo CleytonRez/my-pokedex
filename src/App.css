@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+.Header {
+  color:white;
+  background-color: red;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.Body {
+  background-color: grey;
+
+}
