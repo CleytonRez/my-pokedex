@@ -1,6 +1,17 @@
 import './App.css';
+import Pokemon from './components/Pokemon'
 
 function App() {
+
+  const list = [
+    "https://www.seekpng.com/png/full/99-991972_16-bit-bulbasaur-pixel-art-pokemon-bulbasaur.png",
+    "https://www.nicepng.com/png/full/223-2239852_ivysaur-ivysaur-pixel-art.png",
+    "https://www.nicepng.com/png/full/168-1685243_venusaur-pokemon-pixel-art-venusaur.png",
+    "https://www.pikpng.com/pngl/b/44-448591_charmander-pixel-art-pokemon-facile-clipart.png",
+    "https://www.pikpng.com/pngl/b/197-1972676_charmeleon-charmeleon-pixel-art-grid-clipart.png",
+    "https://www.seekpng.com/png/full/797-7970826_random-image-from-user-pokemon-charizard-pixel-art.png",
+  ]
+
   return (
     <div className="App">
       <div className="Header">
@@ -14,12 +25,13 @@ function App() {
       </div>
 
       <div className="Pokemons">
-        <img src="https://www.seekpng.com/png/full/99-991972_16-bit-bulbasaur-pixel-art-pokemon-bulbasaur.png" alt="bulbasaur" className="pokemon"></img>
-        <img src="https://www.nicepng.com/png/full/223-2239852_ivysaur-ivysaur-pixel-art.png" alt="ivysaur" className="pokemon"></img>
-        <img src="https://www.nicepng.com/png/full/168-1685243_venusaur-pokemon-pixel-art-venusaur.png" alt="venusaur" className="pokemon"></img>
-        <img src="https://www.pikpng.com/pngl/b/44-448591_charmander-pixel-art-pokemon-facile-clipart.png" alt="charmander" className="pokemon"></img>
-        <img src="https://www.pikpng.com/pngl/b/197-1972676_charmeleon-charmeleon-pixel-art-grid-clipart.png" alt="charmeleon" className="pokemon"></img>
-        <img src="https://www.seekpng.com/png/full/797-7970826_random-image-from-user-pokemon-charizard-pixel-art.png" alt="charizard" className="pokemon"></img>
+        {
+          list.map(
+            function (link) {
+              return <Pokemon url={link}></Pokemon>
+            }
+          )
+        }
 
       </div>
 
