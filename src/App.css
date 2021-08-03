@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+
 }
 .Header {
   display: flex;
@@ -12,7 +12,26 @@
 }
 .Body {
   background-color: #353A40;
+  display: flex;
 
+
+}
+
+.buttonmenu {
+  background-color: #353A40;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.buttonmenu:hover {
+  cursor: pointer;
 }
 .Pokemons {
   background-color: lightgrey;
@@ -21,5 +40,8 @@
 .pokemon {
   background-color: #6C747E;
   padding: 50px;
-  margin: 0 10px;
+  margin: 10px 10px;
+  width: 50px;
+  height: 50px;
+
 }
